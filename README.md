@@ -23,3 +23,5 @@ Deve suportar Paginação
 Deve suportar Ordenação por diferentes tipos de atributos
 A consulta de listagem não deve retornar os LOGs dos Eventos
 Deve permitir a busca de um evento por um ID, dessa maneira exibindo o LOG desse evento em específico
+
+Link Heroku: https://error-center-italo.herokuapp.com/
