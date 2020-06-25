@@ -30,9 +30,10 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Authorization authority;
 
+    /*
     @OneToMany(mappedBy = "user")
     private List<EventLog> eventLogs;
-
+     */
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Arrays.asList(new SimpleGrantedAuthority(getAuthority()));

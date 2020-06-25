@@ -35,13 +35,6 @@ public class UserController {
         return new ResponseEntity<User>(userService.save(user,"POST"), HttpStatus.CREATED);
     }
 
-    //Método de teste
-    @RequestMapping(value = "/username", method = RequestMethod.GET)
-    @ResponseBody
-    public String getUser(Authentication authentication){
-        return authentication.getName();
-    }
-
     @ApiOperation("Search all users using predicate")
     @ApiResponses(value = {@ApiResponse(code = 200, message = "Successful Operation")})
     @GetMapping

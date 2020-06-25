@@ -47,7 +47,9 @@ public class EventLog {
     @NotEmpty(message = "log field cannot be empty")
     private String log;
 
+    /*
     @ManyToOne
     @JoinColumn(name="user_id")
     private User user;
+     */
 }
